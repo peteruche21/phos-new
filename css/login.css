@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    transform: translateY(17%);
+    margin: 50px 15px;
+    z-index: 10;
+}
+
+
+img#brandLogo {
+    width: 45px;
+}
+
+.nav-bar {}
+
+ul {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+li {
+    list-style-type: none;
+    float: left;
+}
+
+a li {
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.maindiv{
+    margin: 20% 0 0 10%;
+    float: left;
+}
+.shadow-out{
+    padding: 0px 0px 0px 0px;
+    background-color: hsl(0, 100%, 70%);
+    z-index: 1;
+}
+.shadow-in{
+    padding: 4px 4px 0px 0px;
+    background-color: hsl(60, 100%, 70%);
+    z-index: 2;
+}
+.write-up{
+    background-color: hsl(180, 97%, 90%);
+    z-index: 3;
+}
+.write-up,.shadow-in,.shadow-out{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+}
+h2.write-up{}
+h4.write-up{}
+p.write-up{}
+h2.write-up,h4.write-up,p.write-up{}
+
+
+.flex {
+    animation: formColor linear 10s infinite 1s alternate;
+}
+
+@keyframes formColor {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 2px 2px 2px white,
+            -2px -2px 2px white;
+            transform: scale(1.05,1.1);
+    }
+
+    50% {
+        box-shadow: 2px 2px 2px white,
+            -2px -2px 2px white;
+            transform: scale(1.05,1.15);
+    }
+
+    75% {
+        background-color: hsl(199, 100%, 81%);
+        box-shadow: 2px 2px 2px white,
+            -2px -2px 2px white;
+            transform: scale(1.05,1.1);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.flex:hover, .flex:active {
+    animation-play-state: paused;
+}
+
+img.wavy {
+    position: absolute;
+
+
+}
+

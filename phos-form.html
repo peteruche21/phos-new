@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>phos</title>
+  <link rel="stylesheet" href="css/phos-form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "Navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "Navbar";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="Navbar" id="myNavbar">
+
+    <div class="logo">
+      <img class="logo" src="img/phos.png" alt="speak more with phos">
+    </div>
+
+    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-users"></i>About us</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <form class="flex">
+
+    <div class="form-img">
+      <img src="img/phos.png" alt="">
+    </div>
+
+    <div>
+      <h1 class="form_name">Create a new account</h1>
+    </div>
+
+    <div class="input-container">
+      <label for="name">Username</label>
+      <input class="input-field" type="text" placeholder="&#xf007;"
+        style="font-family: FontAwesome, Arial; font-style: normal" name="usrnm" required>
+    </div>
+
+    <div class="input-container">
+      <label for="email">Email</label>
+      <input class="input-field" type="email" placeholder="&#xf0e0;"
+        style="font-family: FontAwesome, Arial; font-style: normal" name="email" required>
+    </div>
+
+    <div class="input-container">
+      <label for="psw">Password</label>
+      <input class="input-field" type="password" placeholder="&#xf084;"
+        style="font-family: FontAwesome, Arial; font-style: normal" name="psw" required>
+    </div>
+
+    <div class="input-container">
+      <label for="psw">Confirm Password</label>
+      <input class="input-field" type="password" placeholder="&#xf084;"
+        style="font-family: FontAwesome, Arial; font-style: normal" name="psw" required></span>
+    </div>
+
+    <div class="input-container">
+      <label for="DOB">Date of Birth</label>
+      <input class="input-field" type="date" placeholder="&#xf073; "
+        style="font-family: FontAwesome, Arial; font-style: normal" name="Dob" required>
+    </div>
+
+    <div class="input-container">
+      <label for="sex">Gender</label>
+      <input type="radio" value="male">
+    </div>
+
+    <div class="input-container">
+      <button type="submit" class="btn_submit">Register</button>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
