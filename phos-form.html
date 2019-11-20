@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript">
+    var login = document.getElementById('phosmodal');
+    window.onclick = Function(event) {
+      if (event.target == login) {
+        login.style.display = "none";
+      }
+    }
+  </script>
+  <script type="text/javascript">
     function myFunction() {
       var x = document.getElementById("myNavbar");
       if (x.className === "Navbar") {
@@ -27,6 +35,10 @@
       <img class="logo" src="img/phos.png" alt="speak more with phos">
     </div>
 
+    <div class="logo-name">
+      <h3 class="logo-name">Phos</h3>
+    </div>
+    <a href="#" class="hiddenbar"><i class=""></i></a>
     <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="#"><i class="fa fa-fw fa-users"></i>About us</a>
     <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
@@ -42,7 +54,7 @@
     </div>
 
     <div>
-      <h1 class="form_name">Create a new account</h1>
+      <h1 class="form_name">Register</h1>
     </div>
 
     <div class="input-container">
@@ -87,6 +99,44 @@
 
   </form>
 
+  <button onclick="document.getElementById('phosmodal').style.display='block'">Login</button>
+
+  <div id="phosmodal" class="login">
+
+    <span onclick="document.getElementById('phosmodal').style.display='none'" class="close"
+      title="Close login">&times;</span>
+
+    <form class="login-content popup" action="" method="post">
+
+      <div class="profile-pic">
+        <img src="img/phos-dark.png" alt="User" class="profilepicture">
+      </div>
+
+      <div class="container">
+        <label for="username">Username</label>
+        <input type="text" name="uname" placeholder="username" required>
+
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Password" name="psw" required>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="container" style="background-color: #f1f1f1;">
+        <button type="button" class="cancelbtn"
+          onclick="document.getElementById('phosmodal').style.display='none'">Cancel</button>
+        <span class="psw">forgot <a href="#">password?</a></span>
+      </div>
+
+    </form>
+
+  </div>
+
+
 </body>
+
+<footer>
+  <h6>copyright@ Phos-inc</h6>
+</footer>
 
 </html>
