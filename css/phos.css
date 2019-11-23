@@ -8,7 +8,7 @@ body {
 
 body {
     display: table;
-      background: linear-gradient(0deg, rgb(0, 0, 0), rgb(2, 0, 32) 96%) no-repeat;  
+    /* background: linear-gradient(90deg, rgb(0, 0, 0), rgb(2, 0, 32), rgb(5, 0, 73)   ) no-repeat; */
 }
 
 .logo {
@@ -44,18 +44,12 @@ img{
 @keyframes breathingBrand {
     0%{ 
         transform: none;
-        border-radius: 2px;
     }
     50%{
-        transform: scale(1.3,1.3);
-        box-shadow: -1.5px -1.5px 2px rgba(255, 255, 0, 0.5),
-                    1.5px 1.5px 2px rgba(255, 255, 0, 0.5);
-        border-radius: 15px;
-        padding: 5px;
+        transform: none;
     }
     100%{
         transform: none;
-        border-radius: 2px #327aff;
     }
 
 }
