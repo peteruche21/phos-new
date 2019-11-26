@@ -1,0 +1,269 @@
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0 auto;
+   padding: 0;
+   background: linear-gradient(90deg, hsl(0, 0%, 11%),hsl(0, 0%, 14%) ) no-repeat;
+   /* background: linear-gradient(90deg, hsl(209, 95%, 27%), hsl(209, 95%, 37%),hsl(210, 100%, 65%)   ) no-repeat; */
+   background-size: cover;
+   background-position: center;
+ }
+
+ .Navbar {
+   width: 100%;
+   height: 75px;
+   background-color: white;
+   overflow: auto;
+ }
+
+ .Navbar a {
+   float: right;
+   text-align: center;
+   color: black;
+   padding: 24px 10px;
+   margin: 0px 3px;
+   text-decoration: none;
+   font-size: 15px;
+ }
+
+ .Navbar a:hover :not(),
+ .Navbar a:active {
+   background-color: black;
+   color: white;
+   text-decoration: none;
+ }
+
+ .Navbar .icon {
+   display: none;
+ }
+
+ .hiddenbar {
+   visibility: hidden;
+ }
+
+ .logo,
+ .logo-name {
+   float: left;
+ }
+
+ img.logo {
+   width: 50px;
+   transform: translate(10px, 12px);
+ }
+
+ h3.logo-name {
+   transform: translate(25px, 22px);
+   padding-left: 9px;
+   border-left: 1px solid black;
+ }
+
+ @media screen and (max-width: 600px) {
+   .Navbar a {
+     display: none;
+   }
+
+   .Navbar a.icon {
+     float: right;
+     display: block;
+   }
+
+   .Navbar a.icon:hover {
+     background-color: white;
+     color: black;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+   .Navbar.responsive {
+     position: relative;
+   }
+
+   .Navbar.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+
+   .Navbar.responsive a {
+     float: none;
+     display: block;
+     text-align: center;
+   }
+ }
+
+ .flex {
+   float: right;
+   background-color: hsl(0, 0%, 100%);
+   transform: translate(-50px, 50px);
+   padding: 10px 10px 0px 10px;
+   border-radius: 20px;
+   margin-bottom: 100px;
+   border: 1.5px double black;
+ }
+
+ /* Style the input container */
+ .input-container {
+   width: 275px;
+   margin-bottom: 5px;
+ }
+
+ /* Style the form icons */
+ .icon {
+   color: white;
+   min-width: 10px;
+   text-align: center;
+ }
+
+ /* Style the input fields */
+ .input-field {
+   width: 100%;
+   padding: 10px;
+   outline: none;
+   height: 30px;
+ }
+
+ .input-field:focus {
+   border: 0.5px solid dodgerblue;
+ }
+
+ p {
+   font-size: 15px;
+   text-align: center;
+   padding: 20px;
+ }
+
+ .form_name {
+   font-size: 25px;
+   color: dodgerblue;
+   text-align: center;
+   padding: 10px 0px;
+   margin-top: 20px;
+ }
+
+ /* Set a style for the submit button */
+ .btn_submit {
+   background-color: dodgerblue;
+   color: white;
+   padding: 15px 20px;
+   border: none;
+   cursor: pointer;
+   width: 275px;
+   opacity: 0.9;
+ }
+
+ .btn_submit:hover {
+   opacity: 1;
+ }
+
+ img {
+   width: 63px;
+   position: relative;
+   float: right;
+ }
+
+ .input-field[type] {
+   color: dodgerblue;
+ }
+
+ .boxed label {
+  display: inline-block;
+  width: 49.1%;
+  padding: 5px 10px;
+  border: solid 2px #bbb;
+  transition: all 0.3s;
+  border-radius: 25px;
+  text-align: center;
+  }
+
+  .boxed input[type="radio"] {
+  display: none;
+  }
+
+  .boxed input[type="radio"]:checked + label {
+    background-color: dodgerblue;
+  color: white;
+  }
+
+ .login {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.8);
+   /* Black w/ opacity */
+   padding-top: 140px;
+ }
+
+ /* Modal Content/Box */
+ .login-content {
+   background-color: #80bfff;
+   margin: 5px auto;
+   /* 15% from the top and centered */
+   border: 1px solid #888;
+   width: 450px;
+   /* Could be more or less, depending on screen size */
+ }
+
+ /* The Close Button */
+ #close {
+   /* Position it in the top right corner outside of the modal */
+   position: absolute;
+   right: 25px;
+   top: 0;
+   color: rgb(255, 0, 0);
+   font-size: 25px;
+ }
+
+ /* Close button on hover */
+ #close:hover,
+ #close:focus {
+   cursor: pointer;
+   transform: scale(1.4, 1.4);
+ }
+
+ /* Add Zoom Animation */
+ .popup {
+   -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s
+ }
+
+ @-webkit-keyframes animatezoom {
+   from {
+     -webkit-transform: scale(0)
+   }
+
+   to {
+     -webkit-transform: scale(1)
+   }
+ }
+
+ @keyframes animatezoom {
+   from {
+     transform: scale(0)
+   }
+
+   to {
+     transform: scale(1)
+   }
+ }
+
+ .profile-pic {}
+
+ h6 {
+   position: fixed;
+   bottom: 0;
+ }

@@ -9,13 +9,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     var login = document.getElementById('phosmodal');
-    window.onclick = Function(event) {
+    window.onclick = Function(event); {
       if (event.target == login) {
         login.style.display = "none";
       }
     }
-  </script>
-  <script type="text/javascript">
+
     function myFunction() {
       var x = document.getElementById("myNavbar");
       if (x.className === "Navbar") {
@@ -88,8 +87,16 @@
     </div>
 
     <div class="input-container">
-      <label for="sex">Gender</label>
-      <input type="radio" value="male">
+      <label>gender</label>
+      <div class="boxed">
+  
+        <input type="radio" id="male" name="gender" value="Male-sex">
+        <label for="male">male</label>
+      
+        <input type="radio" id="female" name="gender" value="female-sex">
+        <label for="female">female</label>
+        
+      </div>
     </div>
 
     <div class="input-container">
@@ -103,13 +110,13 @@
 
   <div id="phosmodal" class="login">
 
-    <span onclick="document.getElementById('phosmodal').style.display='none'" class="close"
+    <span onclick="document.getElementById('phosmodal').style.display='none'" id="close"
       title="Close login">&times;</span>
 
     <form class="login-content popup" action="" method="post">
 
       <div class="profile-pic">
-        <img src="img/phos-dark.png" alt="User" class="profilepicture">
+        <img src="img/phos.png" alt="User" class="profilepicture">
       </div>
 
       <div class="login-input-container">
@@ -134,9 +141,5 @@
 
 
 </body>
-
-<footer>
-  <h6>copyright@ Phos-inc</h6>
-</footer>
 
 </html>
