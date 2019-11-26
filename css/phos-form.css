@@ -167,6 +167,25 @@
    color: dodgerblue;
  }
 
+ .boxed label {
+  display: inline-block;
+  width: 49.1%;
+  padding: 5px 10px;
+  border: solid 2px #bbb;
+  transition: all 0.3s;
+  border-radius: 25px;
+  text-align: center;
+  }
+
+  .boxed input[type="radio"] {
+  display: none;
+  }
+
+  .boxed input[type="radio"]:checked + label {
+    background-color: dodgerblue;
+  color: white;
+  }
+
  .login {
    display: none;
    /* Hidden by default */
@@ -200,19 +219,18 @@
  }
 
  /* The Close Button */
- .close {
+ #close {
    /* Position it in the top right corner outside of the modal */
    position: absolute;
    right: 25px;
    top: 0;
-   color: #ff0000;
-   font-size: 35px;
-   font-weight: bold;
+   color: rgb(255, 0, 0);
+   font-size: 25px;
  }
 
  /* Close button on hover */
- .close:hover,
- .close:focus {
+ #close:hover,
+ #close:focus {
    cursor: pointer;
    transform: scale(1.4, 1.4);
  }
