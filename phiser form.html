@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PHISER FORM</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+    .login-page {
+      width: 360px;
+      padding: 8% 0 0;
+      margin: auto;
+    }
+
+    .form {
+      position: relative;
+      z-index: 1;
+      background: rgb(18, 18, 18, 0.9);
+      max-width: 250px;
+      margin: 0 auto 100px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      border-radius: 2px;
+    }
+
+    .form input {
+      font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: inherit;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #d4d3d3;
+      border-bottom: solid 0.02em #555;
+    }
+
+    .form input::placeholder {
+      color: #d4d3d3;
+
+    }
+
+    .form button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #1e90ff;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+      border-radius: 2px;
+      margin-top: 25px;
+    }
+
+    .form button:hover,
+    .form button:active,
+    .form button:focus {
+      background: #1e80ff;
+    }
+
+    .form .message {
+      margin: 15px 0 0;
+      color: #d4d3d3;
+      font-size: 12px;
+    }
+
+    .form .message a {
+      color: #1ea0ff;
+      text-decoration: none;
+    }
+
+    body {
+      background: blue;
+      font-family: "Roboto", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .boxed,
+    .login-form {
+      margin: 20px 0;
+    }
+
+    .boxed label {
+      width: 49.1%;
+      padding: 10px 20px;
+      border: 0;
+      transition: all 0.3s;
+      border-radius: 2px;
+      text-align: center;
+      color: #b0b1b1;
+    }
+
+    .boxed input[type="radio"] {
+      display: none;
+    }
+
+    .boxed input[type="radio"]:checked+label {
+      background-color: #000;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(70, 70, 70, 0.14);
+    }
+
+    .boxed_main_label {
+      color: #b0b1b1;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-page">
+    <div class="form">
+      <img src="img/phos-dark.png">
+      <form class="login-form">
+        <input type="text" placeholder="username" />
+        <input type="password" placeholder="password" />
+        <label class="boxed_main_label">gender</label>
+        <div class="boxed">
+          <input type="radio" id="male" name="gender" value="Male-sex">
+          <label for="male">male</label>
+          <input type="radio" id="female" name="gender" value="female-sex">
+          <label for="female">female</label>
+        </div>
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
